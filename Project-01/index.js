@@ -7,6 +7,23 @@ const PORT=8000;
 
 //middleware Plugin
 app.use(express.urlencoded({extended:false}));
+
+//my middleware
+app.use((req,res,next)=>{
+  fs.appendFile("log.txt",`\n${Date.now()}:${req.ip} ${req.method}: ${req.path}`,(err,data)=>{
+    next();
+  }
+);
+  })
+app.use((req,res,next)=>{
+  console.log("hello from middleware 2")
+  // return res.json({msg:"hello from middleware 2"});
+  return res.end("hello from middleware 2");
+  // next();
+})
+
+
+
 //routes here
 //all users
 app.get("/api/users",(req,res)=>{
