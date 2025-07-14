@@ -1,0 +1,28 @@
+
+1752521681070:::1 POST: /api/users
+
+1752521690674:::1 GET: /api/users
+
+1752521712925:::1 GET: /api/users
+
+1752522031007:::1 POST: /api/users
+
+1752522035697:::1 GET: /api/users
+
+1752522136946:::1 GET: /api/user
+
+1752522144692:::1 GET: /api/users
+
+1752522201683:::1 GET: /api/user/1000
+
+1752522231997:::1 GET: /api/user
+
+1752522238959:::1 GET: /api/user/1000
+
+1752522464035:::1 POST: /api/user
+
+1752522486542:::1 POST: /api/user
+
+1752522553605:::1 DELETE: /api/user/%2268755ef6d3ecc8cf95553de0%22
+
+1752522586791:::1 DELETE: /api/user/68755ef6d3ecc8cf95553de0
